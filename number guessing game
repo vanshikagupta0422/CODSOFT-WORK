@@ -4,11 +4,8 @@
 using namespace std;
 int main(){
   
-  int i=0;
-  while(i=0)
-
- cout<<rand()%1000<<endl;
- int random=rand()%1000;
+   srand(time(0));
+ int random=rand()%100+1;
 
 cout<<"The computer has generated a randon number"<<endl;
 cout<<"you have to guess it!"<<endl;
