@@ -1,0 +1,54 @@
+#include<cstdlib>
+#include<iostream>
+#include<ctime>
+using namespace std;
+int main(){
+  
+  int i=0;
+  while(i=0)
+
+ cout<<rand()%1000<<endl;
+ int random=rand()%1000;
+
+cout<<"The computer has generated a randon number"<<endl;
+cout<<"you have to guess it!"<<endl;
+cout<<"the number is between 0-100,"<<endl;
+cout<<"You have unlimited choices until you choose correct number"<<endl;
+cout<<"lets begin. Tell me your first guess?"<<endl;
+int guess;
+
+cin>>guess;
+
+int choice;
+for(int choice=1;choice<=random;choice++){
+
+if(guess==random){
+  cout<<"CORRECT GUESS"<<endl;
+  cout<<"Well done! Bravo."<<endl;
+  break;
+}
+ else if(guess<=20 && guess>=0){
+  cout<<"low guess"<<endl;
+  cout<<"tell your next guess"<<endl;
+  cin>>guess;
+}
+else if(guess<=40 && guess>=21){
+  cout<<"little low but close"<<endl;
+  cout<<"tell your next guess"<<endl;
+  cin>>guess;
+}
+else if(guess<=60 && guess>=42){
+  cout<<"little high but close"<<endl;
+  cout<<"tell your next guess"<<endl;
+  cin>>guess;
+}
+else if(guess<=80 && guess>=61){
+  cout<<"high guess"<<endl;
+  cout<<"tell your next guess"<<endl;
+cin>>guess;
+}
+else{
+  cout<<"too high guess!!"<<endl;
+cout<<"tell your next guess"<<endl;
+cin>>guess;
+}}}
